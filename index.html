@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TS Enterprise - Smartphone Shop</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(192, 230, 235);
+        }
+        .navbar-brand {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        .hero-section {
+            background-image: url('image04.jpg');
+            background-size: cover;
+            background-position: center;
+            color:black;
+            text-align: center;
+            padding: 100px 0;
+        }
+        .hero-section h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+        .about-section {
+        background-color: #8da3ba; /* Light grey background */
+        color: #333; /* Dark grey text color */
+        border-top: 4px solid #007bff; /* Top border with the primary color */
+        border-bottom: 4px solid #007bff; /* Bottom border with the primary color */
+        padding: 60px 0; /* Padding to make the section more spacious */
+    }
+
+    .about-section h2 {
+        font-size: 2.5rem; /* Larger font size for the heading */
+        color: #010407; /* Primary color for the heading */
+        font-weight: bold; /* Bold font weight for the heading */
+        margin-bottom: 40px; /* Space below the heading */
+    }
+
+    .about-section p {
+        font-size: 1.2rem; /* Slightly larger font size for the text */
+        line-height: 1.6; /* Increased line height for better readability */
+        max-width: 800px; /* Max width to limit the width of the text */
+        margin: 0 auto; /* Center the text */
+        text-align: center; /* Center-align the text */
+    }
+   
+         
+        .product-card img {
+            height: 250px;
+            object-fit: cover;
+        }
+        footer {
+            background-color:rgb(236, 188, 237);
+            color: black;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">TS Enterprise</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <h1>Welcome to TS Enterprise</h1>
+        <p>Your One-Stop Shop for the Latest Smartphones</p>
+        <a href="#products" class="btn btn-primary btn-lg">Shop Now</a>
+    </div>
+</section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Products</h2>
+            <div class="row">
+                <!-- Product 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card product-card">
+                        <img src="image01.webp" class="card-img-top" alt="Product 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Smartphone Model 1</h5>
+                            <p class="card-text">A powerful smartphone with amazing features.</p>
+                            <p class="card-text"><strong>$699.99</strong></p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card product-card">
+                        <img src="image02.webp" class="card-img-top" alt="Product 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Smartphone Model 2</h5>
+                            <p class="card-text">A sleek design with cutting-edge technology.</p>
+                            <p class="card-text"><strong>$799.99</strong></p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card product-card">
+                        <img src="image03.webp" class="card-img-top" alt="Product 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Smartphone Model 3</h5>
+                            <p class="card-text">Experience the best with this high-end smartphone.</p>
+                            <p class="card-text"><strong>$999.99</strong></p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+<section id="about" class="py-5 about-section">
+    <div class="container">
+        <h2 class="text-center mb-5">About TS Enterprise</h2>
+        <p>TS Enterprise is a leading retailer of smartphones, offering the latest models at competitive prices. Our mission is to provide our customers with a seamless shopping experience, excellent customer service, and top-quality products.</p>
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Address</h5>
+                    <p>Dhaka,United city,Bangladesh</p>
+                    <h5>Email</h5>
+                    <p>makter223230@bscse.uiu.ac.bd</p>
+                    <h5>Phone</h5>
+                    <p>01308510297</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Get in Touch</h5>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-5">
+        <div class="container">
+            <p>&copy; 2024 TS Enterprise. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
